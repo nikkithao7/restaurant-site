@@ -1,0 +1,64 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #2a444c;
+	}
+	
+h1{
+	font-size: 50px;
+	font-family: Lobster;
+	line-height: 35px;
+	color: #436570;
+	}
+	
+hr{
+	border-top: 3px double #A5243D;
+	border-bottom: 3px solid #A5243D;
+	}
+	
+h2{
+	font-size: 18px;
+	line-height: 25px;
+	color: #5b7d87;
+	}
+	
+a{
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: none;
+	}
+	
+a:link{
+	color: #A5243D;
+	text-decoration: underline;
+	}
+	
+a:visited{
+	color: #B48291;
+	}
+	
+a:hover{
+	color: #AFAAB9;
+	font-weight: bold;
+	}
+	
+a:active{
+	color: #8c22328;
+	text-decoration: none;
+	}
+	
+#footer{
+	font-size:13px;
+	color: #2a444c;
+	}
+		
+#footer, #title{
+	text-align: center;
+	}
+	
+	
+
+	

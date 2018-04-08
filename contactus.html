@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+		<title>Contact Us - Unicorns Galore Restaurant</title>
+			
+	
+<link rel="stylesheet" href="restaurantStyles.css">
+
+
+<style>
+
+input[type=text] {
+		background-color: #CEE0DC;
+		border: 1px solid #292533;
+		width: 25%;
+		padding: 10px 20px;
+		box-sizing: border-box;
+		vertical-align: middle;
+		}
+		
+input[type=radio] {
+		vertical-align: middle;
+		display: inline-block;
+		width: 10px;
+		}
+		
+input[type=checkbox] {
+		vertical-align: middle;
+		display: inline-block;
+		width: 10px;
+		}
+		
+fieldset {
+		background-color: #CEE0DC;
+		width: 25%;
+		box-sizing: border-box;
+		}
+		
+input, label {
+		font-size: 16px;
+		font-family: Arial, Helvetica, serif;
+		margin: 8px;
+		vertical-align: middle;
+		display: inline-block;
+		width: 500px;
+		text-align: right;
+		padding-right: 15px;
+		}
+		
+legend {
+		font-size: 16px;
+		font-family: Arial, Helvetica, serif;
+		}
+		
+select {
+		background-color: #CEE0DC;
+		width: 25%;
+		padding: 10px 20px;
+		margin: 8px;
+		box-sizing: border-box;
+		border: 1px solid #292533;
+		}
+		
+textarea {
+		width: 25%;
+		height: 200px;
+		padding: 10px 20px;
+		margin: 8px;
+		box-sizing: border-box;
+		border: 1px solid #292533;
+		border-radius: 3px;
+		background-color: #CEE0DC;
+		resize: none;
+		vertical-align: top;
+		}
+		
+input, submit{
+		background-color: #436570;
+		border: 1px solid #292533;
+		color: white;
+		padding: 3px 5px;
+		text-align: center;
+		text-decoration: none;
+		font-size: 16px;
+		}
+		
+label.required {
+		font-weight: bold;
+		}
+	
+
+
+		
+</style>
+		
+</head>
+
+<body>
+	<div id="title">
+	<h1>Unicorns Galore Restaurant</h1>
+	</div>
+	<div id="navigation">
+	<hr /> 
+
+	<p>
+		<a href="index.html">Home</a>
+		<a href="menu.html">Menu</a>
+		<a href="contactus.html">Contact Us</a>
+	</p>
+	<hr />
+	</div>
+
+	<div id="main">
+	
+
+	
+	<span style="white-space: normal">
+		<form action="submit.html" method="POST">
+		<label for="fullName" class="required">Name:</label>
+		<input type="text" id="fullName" name="fullName" required><br />
+		<label for="email" class="required">Email:</label>
+		<input type="text" id="email" name="email" required><br />
+		<label for="phone" class="required">Phone:</label>
+		<input type="text" id="phone" name="phone" required><br />
+	
+		
+		<label for="reason">Reason for Inquiry:</label>
+		<select id="reason" name="reason">
+		<option value="catering" selected>Catering</option>
+		<option value="privateParty">Private Party</option>
+		<option value="feedback">Feedback</option>
+		<option value="other">Other</option>
+		</select><br />
+		
+		<label for="info">Additional Information:</label>
+		<textarea id="info"></textarea><br />
+		
+	
+		<label>Have you been to the restaurant?</label>
+		<input type="radio" id="choice1" name="beenHereBefore?" value="no" checked="checked">
+		<label for="choice1">No</label>
+		<input type="radio" id="choice2" name="beenHereBefore?" value="yes">
+		<label for="choice2">Yes</label><br />
+		
+		<label>Best days to contact you (check all that apply):</label>
+		<input type="checkbox" id="monday" name="contactBack" value="monday">
+		<label for="monday">M</label>
+		<input type="checkbox" id="tuesday" name="contactBack" value="tuesday">
+		<label for="tuesday">T</label>
+		<input type="checkbox" id="wednesday" name="contactBack" value="wednesday">
+		<label for="wednesday">W</label>
+		<input type="checkbox" id="thursday" name="contactBack" value="thursday">
+		<label for="thursday">Th</label>
+		<input type="checkbox" id="friday" name="contactBack" value="friday">
+		<label for="friday">F</label><br />
+		
+		<input type="submit" name="submit" value="Send Request">
+	</span>
+	
+	</div>
+
+	<div id="footer">
+	<hr />
+
+	<footer>
+		<p>7777 Universal Unicorn St.,
+		Unicornmania, MN 55117</p>
+		<p>(651) 777-7777</p>
+	</footer>
+
+	</div>
+</body>
+
+
+</html>

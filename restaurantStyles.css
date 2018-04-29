@@ -1,6 +1,8 @@
 
 
 @import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+
 
 body{
 	font-family: Arial, Helvetica, sans-serif;
@@ -15,8 +17,8 @@ h1{
 	}
 	
 hr{
-	border-top: 3px double #A5243D;
-	border-bottom: 3px solid #A5243D;
+	border-top: 1.5px solid #F18FAE;
+	margin: 0;
 	}
 	
 h2{
@@ -49,16 +51,7 @@ a:active{
 	color: #8c22328;
 	text-decoration: none;
 	}
-	
-#footer{
-	font-size:13px;
-	color: #2a444c;
-	}
 		
-#footer, #title{
-	text-align: center;
-	}
-	
 	
 
 	

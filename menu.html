@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Menu - Unicorns Galore Restaurant</title>
+<html lang="en">
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Unicorns Galore Restaurant</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <link rel="stylesheet" href="restaurantStyles.css">
 
 <style>
 
+.col-sm{
+	background-color: #E9ECEF;
+	}	
+
 .food {
 	background-color: #CEE0DC;
 	width: 100%;
-	border-collapse: collapse;
+	border: 1px solid;
 	}	
 	
 .beverages {
@@ -18,7 +28,6 @@
 	border: 1px solid;
 	margin-top: 5px;
 	margin-left: 25%;
-	border-spacing: 0px;
 	}
 
 .beverages tr:nth-child(even) {background-color:#CEE0DC;
@@ -43,25 +52,56 @@ td {
 </head>
 
 <body>
-	<div id="title">
+
+	<div class="container text-center">
 	<h1>Unicorns Galore Restaurant</h1>
 	</div>
-	<div id="navigation">
-	<hr /> 
+	
+	
+	<noscript><div class="alert alert-danger" role="alert">
+	This site is best viewed with JavaScript enabled.</div></noscript>
 
-	<p>
-		<a href="index.html">Home</a>
-		<a href="menu.html">Menu</a>
-		<a href="contactus.html">Contact Us</a>
-	</p>
-	<hr />
+	
+	<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="jumbotron">We're opening a new location!</div>
+    </div>
+    <div class="carousel-item">
+       <div class="jumbotron">We're rolling out our seasonal menu, with special options for this season.</div>
+    </div>
+    <div class="carousel-item">
+      <div class="jumbotron">The Drink of the Month is SG Special Brew.</div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 	</div>
 
-	<div id="main">
 	
-	<div id="info">
+<hr />
+	<nav class="nav nav-pills nav-fill" id="nav">
+		<a class="nav-link active" href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+		<a class="nav-link" href="menu.html">Menu</a>
+		<a class="nav-link" href="contactus.html">Contact Us</a>
+	</nav>	
+<hr />
 
-	<table class="food">
+	
+	<div class="col-sm flex-start">
+	<br />
+	<table class="food text-center">
 			<tr>
 			<th>Burgers and Fries</th>
 			<th>Hot Dog and Chips</th>
@@ -128,9 +168,11 @@ td {
 			</tr>
 	</table>
 	
-	<table class="beverages">
+	<div class="col-xs-4">
+	<table class="beverages text-center">
 			<tr>
 			<th>Beverages</th>
+			<td></td>
 			</tr>
 			<tr>
 			<td>Root Beer</td>
@@ -148,21 +190,21 @@ td {
 			<td>Iced Tea</td>
 			<td>$1.25</td>
 			</tr>
-	</table>
+	</table><br /></div>
+	</div>	
 	
-	</div>
-	</div>
-
-	<div id="footer">
-	<hr />
-
-	<footer>
+<hr />
+	<div class="footer text-center">
 		<p>7777 Universal Unicorn St.,
 		Unicornmania, MN 55117</p>
 		<p>(651) 777-7777</p>
-	</footer>
-
 	</div>
+	
+	
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	
+	
 </body>
 
 

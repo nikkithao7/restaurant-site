@@ -1,176 +1,186 @@
 <!DOCTYPE html>
+<html lang="en">
 
+<head>
 
-<html>
-	<head>
-		<title>Contact Us - Unicorns Galore Restaurant</title>
-			
-	
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Unicorns Galore Restaurant</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="restaurantStyles.css">
+
 
 
 <style>
 
-input[type=text] {
+.contactform {
+	background-color: #E9ECEF;
+	}	
+
+.form-control {
 		background-color: #CEE0DC;
 		border: 1px solid #292533;
-		width: 25%;
-		padding: 10px 20px;
-		box-sizing: border-box;
-		vertical-align: middle;
-		}
-		
-input[type=radio] {
-		vertical-align: middle;
 		display: inline-block;
-		width: 10px;
-		}
-		
-input[type=checkbox] {
-		vertical-align: middle;
-		display: inline-block;
-		width: 10px;
-		}
-		
-fieldset {
-		background-color: #CEE0DC;
-		width: 25%;
-		box-sizing: border-box;
-		}
-		
-input, label {
-		font-size: 16px;
-		font-family: Arial, Helvetica, serif;
-		margin: 8px;
-		vertical-align: middle;
-		display: inline-block;
-		width: 500px;
-		text-align: right;
-		padding-right: 15px;
-		}
-		
-legend {
-		font-size: 16px;
-		font-family: Arial, Helvetica, serif;
-		}
-		
-select {
-		background-color: #CEE0DC;
-		width: 25%;
-		padding: 10px 20px;
-		margin: 8px;
-		box-sizing: border-box;
-		border: 1px solid #292533;
+		text-align: left;
 		}
 		
 textarea {
-		width: 25%;
 		height: 200px;
-		padding: 10px 20px;
-		margin: 8px;
-		box-sizing: border-box;
-		border: 1px solid #292533;
-		border-radius: 3px;
-		background-color: #CEE0DC;
 		resize: none;
-		vertical-align: top;
-		}
-		
-input, submit{
-		background-color: #436570;
-		border: 1px solid #292533;
-		color: white;
-		padding: 3px 5px;
-		text-align: center;
-		text-decoration: none;
-		font-size: 16px;
 		}
 		
 label.required {
 		font-weight: bold;
 		}
-	
-
-
+		
+label {
+		display: inline-block;
+		text-align: right;
+		}
 		
 </style>
 		
 </head>
 
 <body>
-	<div id="title">
+
+	<div class="container text-center">
 	<h1>Unicorns Galore Restaurant</h1>
 	</div>
-	<div id="navigation">
-	<hr /> 
+	
+	
+	<noscript><div class="alert alert-danger" role="alert">
+	This site is best viewed with JavaScript enabled.</div></noscript>
 
-	<p>
-		<a href="index.html">Home</a>
-		<a href="menu.html">Menu</a>
-		<a href="contactus.html">Contact Us</a>
-	</p>
-	<hr />
+	
+	<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="jumbotron">We're opening a new location!</div>
+    </div>
+    <div class="carousel-item">
+       <div class="jumbotron">We're rolling out our seasonal menu, with special options for this season.</div>
+    </div>
+    <div class="carousel-item">
+      <div class="jumbotron">The Drink of the Month is SG Special Brew.</div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 	</div>
 
-	<div id="main">
 	
+<hr />
+	<nav class="nav nav-pills nav-fill" id="nav">
+		<a class="nav-link active" href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+		<a class="nav-link" href="menu.html">Menu</a>
+		<a class="nav-link" href="contactus.html">Contact Us</a>
+	</nav>	
+<hr />
 
-	
-	<span style="white-space: normal">
-		<form action="submit.html" method="POST">
-		<label for="fullName" class="required">Name:</label>
-		<input type="text" id="fullName" name="fullName" required><br />
-		<label for="email" class="required">Email:</label>
-		<input type="text" id="email" name="email" required><br />
-		<label for="phone" class="required">Phone:</label>
-		<input type="text" id="phone" name="phone" required><br />
-	
-		
-		<label for="reason">Reason for Inquiry:</label>
-		<select id="reason" name="reason">
+
+<div class="contactform col-sm flex-start">
+<br />
+<form class="form-horizontal" action="submit.html" method="post">
+	<div class="form-group row">
+		<label for="fullName" class="control-label col-sm-2 required">Name:</label>
+	<div class="col-sm-10">	
+		<input class="form-control" type="text" id="fullName" name="fullName" required>
+	</div></div>	
+	<div class="form-group row">	
+		<label for="email" class="control-label col-sm-2 required">Email:</label>
+	<div class="col-sm-10">	
+		<input class="form-control" type="text" id="email" name="email" required>
+	</div></div>	
+	<div class="form-group row">	
+		<label for="phone" class="control-label col-sm-2 required">Phone:</label>
+	<div class="col-sm-10">	
+		<input class="form-control" type="text" id="phone" name="phone" required>
+	</div></div>
+	<div class="form-group row">
+		<label for="reason" class="control-label col-sm-2">Reason for Inquiry:</label>
+	<div class="col-sm-10">	
+		<select class="form-control" id="reason" name="reason">
 		<option value="catering" selected>Catering</option>
 		<option value="privateParty">Private Party</option>
 		<option value="feedback">Feedback</option>
 		<option value="other">Other</option>
-		</select><br />
-		
-		<label for="info">Additional Information:</label>
-		<textarea id="info"></textarea><br />
-		
-	
-		<label>Have you been to the restaurant?</label>
-		<input type="radio" id="choice1" name="beenHereBefore?" value="no" checked="checked">
+		</select>
+	</div></div>
+	<div class="form-group row">
+		<label for="info" class="control-label col-sm-2">Additional Information:</label>
+	<div class="col-sm-10">		
+		<textarea class="form-control" id="info"></textarea>
+	</div></div>
+	<div class="form-group row">	
+		<label class="form-check-label col-sm-2">Have you been to the restaurant?</label>
+	<div class="col-sm-10">	
+	<div class="form-check form-check-inline">	
+		<input class="form-check-input" type="radio" id="choice1" name="beenHereBefore?" value="no" checked="checked">
 		<label for="choice1">No</label>
-		<input type="radio" id="choice2" name="beenHereBefore?" value="yes">
-		<label for="choice2">Yes</label><br />
-		
-		<label>Best days to contact you (check all that apply):</label>
-		<input type="checkbox" id="monday" name="contactBack" value="monday">
-		<label for="monday">M</label>
-		<input type="checkbox" id="tuesday" name="contactBack" value="tuesday">
-		<label for="tuesday">T</label>
-		<input type="checkbox" id="wednesday" name="contactBack" value="wednesday">
-		<label for="wednesday">W</label>
-		<input type="checkbox" id="thursday" name="contactBack" value="thursday">
-		<label for="thursday">Th</label>
-		<input type="checkbox" id="friday" name="contactBack" value="friday">
-		<label for="friday">F</label><br />
-		
-		<input type="submit" name="submit" value="Send Request">
-	</span>
-	
+		</div>		
+	<div class="form-check form-check-inline">	
+		<input class="form-check-input" type="radio" id="choice2" name="beenHereBefore?" value="yes">
+		<label for="choice2">Yes</label>
+	</div>	
 	</div>
-
-	<div id="footer">
-	<hr />
-
-	<footer>
+	</div>
+	<div class="form-group row">	
+		<label class="form-check-label col-sm-2">Best days to contact you (check all that apply):</label>
+	<div class="col-sm-10">	
+	<div class="form-check form-check-inline">	
+		<input class="form-check-input" type="checkbox" id="monday" name="contactBack" value="monday">
+		<label class="form-check-input" for="monday">M</label>
+	</div>
+	<div class="form-check form-check-inline">	
+		<input class="form-check-input" type="checkbox" id="tuesday" name="contactBack" value="tuesday">
+		<label class="form-check-input" for="tuesday">T</label>
+	</div>	
+	<div class="form-check form-check-inline">
+		<input class="form-check-input" type="checkbox" id="wednesday" name="contactBack" value="wednesday">
+		<label class="form-check-input" for="wednesday">W</label>
+	</div>
+	<div class="form-check form-check-inline">	
+		<input class="form-check-input" type="checkbox" id="thursday" name="contactBack" value="thursday">
+		<label class="form-check-input" for="thursday">Th</label>
+	</div>
+	<div class="form-check form-check-inline">
+		<input class="form-check-input" type="checkbox" id="friday" name="contactBack" value="friday">
+		<label class="form-check-input" for="friday">F</label>
+	</div>
+	</div>	
+	</div>
+	<div class="form-group">
+	<div class="offset-sm-2 col-sm-10">
+		<button type="submit" class="btn btn-primary">Send Request</button>
+	</div>
+	</div><br />
+	</form>
+	</div>
+	
+<hr />
+	<div class="footer text-center">
 		<p>7777 Universal Unicorn St.,
 		Unicornmania, MN 55117</p>
 		<p>(651) 777-7777</p>
-	</footer>
-
 	</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	
+	
 </body>
 
 
